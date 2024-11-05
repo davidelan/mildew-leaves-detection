@@ -25,22 +25,24 @@ f"for timely intervention and more effective disease management. "
 f"By leveraging deep learning techniques, this initiative aims to provide cherry growers with an " 
 f"efficient, scalable tool to combat powdery mildew. This technological advancement could " 
 f"significantly improve both crop yield and quality, paving the way for healthier orchards and a " 
-f"more sustainable agricultural future."
+f"more sustainable agricultural future. \n\n"   
     )
 
     st.warning(
         f"**Project Dataset**\n\n"
-        f"The available dataset contains 2104 healthy leaves and 2104 affected leaves "
-        f"individually photographed against a neutral background."
-        f"")
+        f"This project uses a dataset of cherry leaf images provided by Farmy & Foods. " 
+        f"The images were carefully gathered and labeled to guarantee the accuracy and reliability of the model "
+        f"during training."
+        )
 
     st.success(
-        f"The project has three business requirements:\n\n"
-        f"1 - A study to visually differentiate a healthy from an infected leaf.\n\n"
-        f"2 - An accurate prediction whether a given leaf is infected by powdery mildew or not. \n\n"
-        f"3 - Download a prediction report of the examined leaves."
+        f"**Business Requirements**\n\n"
+    
+        f"1 - Visually differentiate a healthy cherry leaf from an infected one.\n\n"
+        f"2 - An accurate prediction whether a given cherry leaf is infected by powdery mildew or not. \n\n"
+        f"3 - Download a prediction report of an examination of cherry leaves."
         )
 
     st.write(
         f"For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/cla-cif/Detection-Cherry-Powdery-Mildew#readme).")
+        f"[Project README file](https://github.com/davidelan/mildew-leaves-detection/blob/main/README.md).")
