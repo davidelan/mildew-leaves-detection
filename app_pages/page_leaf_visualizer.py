@@ -12,48 +12,54 @@ import random
 def page_leaf_visualizer_body():
     st.write("### Leaves Visualizer")
     st.info(
-        f"A study that visually differentiates a cherry leaf affected by powdery mildew from a healthy one.")
+        f"The purpose of this study is to help distinguish between "
+        f"a healthy cherry leaf and one affected by mildew.\n\n"
+
+        f"This page provides a visual representation of the cherry leaf dataset."
+        
+        f"Below you have the opportunity to explore differen kind of visualizations and "
+        f"get a better understanding between healthy and unhealthy cherry leaves.")
 
     st.write(
         f"For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/cla-cif/Detection-Cherry-Powdery-Mildew#readme).")
-
-    st.warning(
-        f"We suspect cherry leaves affected by powdery mildew have clear marks," 
-        f" typically the first symptom is a light-green, circular lesion on either leaf surface," 
-        f" then a subtle white cotton-like growth develops in the infected area.\n\n" 
-        f" This property has to be translated in machine learning terms," 
-        f" images have to be 'prepared' before being fed to the model for an optimal feature extraction and training.\n\n"
-        f" When we are dealing with an Image dataset, it's important to normalize the images in the dataset before training a Neural Network on it." 
-        f" To normalize an image, one will need the mean and standard deviation of the entire dataset that are calculated with a mathematical formula"
-        f" which takes into consideration the properties of an image"
-    )
+        f"[Project README file](https://github.com/davidelan/mildew-leaves-detection/blob/main/README.md).")
     
+
     version = 'v1'
+
+    if st.checkbox("Samples Cherry Leaf Image"):
+        col1, col2 = st.beta_columns(2)
+        with col1:
+         st.image(f"outputs/{version}/sample_healthy_leaf.png", caption='Sample Cherry healthy Leaf Image')
+        with col2:
+         st.image(f"outputs/{version}/sample_mildew_leaf.png", caption='Sample Cherry mildew Leaf Image')
+
+
     if st.checkbox("Difference between average and variability image"):
       
       avg_powdery_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
       avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
       st.warning(
-        f"We notice the average and variability images did not show "
-        f"patterns where we could intuitively differentiate one from another. " 
-        f"However, mildew affected leaves show more white stipes on the center.")
+        f"As you can see below, the average and variability images did not reveale clear patterns "
+        f"which could allow us to intuitively distinguish from the two categories.")
 
-      st.image(avg_powdery_mildew, caption='Affected leaf - Average and Variability')
-      st.image(avg_uninfected, caption='healthy leaf - Average and Variability')
+      st.image(avg_powdery_mildew, caption='Mildew leaf - Average and Variability')
+      st.image(avg_uninfected, caption='Healthy leaf - Average and Variability')
       st.write("---")
 
     if st.checkbox("Differences between average infected and average healthy leaves"):
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
+
           st.warning(
-            f"We notice this study didn't show "
-            f"patterns where we could intuitively differentiate one from another.")
+            f"The first pair of images represents the mean value. "
+            f"Concerning variability differences, the darker areas indicate regions where the two images "
+            f"are similar, while the lighter areas show areas with differing variability.")
           st.image(diff_between_avgs, caption='Difference between average images')
 
     if st.checkbox("Image Montage"): 
-      st.write("To refresh the montage, click on the 'Create Montage' button")
+      st.write("Choose a label from the dropdown menu to create a montage of images from the two categories")
       my_data_dir = 'inputs/cherryleaves_dataset/cherry-leaves'
       labels = os.listdir(my_data_dir+ '/validation')
       label_to_display = st.selectbox(label="Select label", options=labels, index=0)
