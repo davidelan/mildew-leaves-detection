@@ -1,4 +1,4 @@
-![Banner](https://github.com/davidelan/mildew-leaves-detection/images/cherry_leaves.jpg)
+![Banner](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/cherry_leaves.jpg)
 
 
 ## Table of Contents
