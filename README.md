@@ -48,41 +48,4 @@ Summarizing:
 
 ### Distinctive Features of Infected Leaves
 
- We hypothesize that cherry leaves infected with powdery mildew exhibit unique visual characteristics that differentiate them from healthy leaves. These characteristics, including specific coloration patterns and textures, can be captured and analyzed by a CNN-based model, allowing it to effectively distinguish between healthy and infected leaves.
-
-### Efficiency in Detection
-
-   The machine learning program is expected to significantly accelerate the cherry leaf examination process. By automating the detection of powdery mildew, the model can save substantial amounts of time, effort, and money compared to manual inspection. With an anticipated accuracy of about 99%, the model could reduce the time and resources required for inspections by at least 90%.
-
-### Reduction of Human Error
-
-   Manual inspections of cherry leaves are prone to human errors, such as overlooking early signs of infection. The model is designed to minimize these errors by consistently applying the same detection criteria, leading to more reliable and accurate results. This could be particularly valuable in large-scale operations where the volume of leaves to be inspected is high.
-
-### Early Detection and Prevention
-
-   Detecting powdery mildew at an early stage is crucial for preventing the spread of the disease to a large number of trees. The model is hypothesized to be more effective than human inspectors at identifying the early signs of infection, thus enabling timely intervention. This early detection could lead to more effective treatment and management strategies, ultimately protecting crop yields and quality.
-
-### Business Impact
-
-   By integrating this machine learning program into their operations, agricultural businesses can improve their crop management practices. The ability to quickly and accurately identify infected leaves allows for faster response times, reducing the risk of widespread infection and potentially leading to significant cost savings.
-
-**2. Observation**
-
-An Image Montage shows the evident difference between a healthy leaf and an infected one. 
-
-![montage_healthy](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector/blob/main/readme_images/montage_healthy.png)
-![montage_infected](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector/blob/main/readme_images/montage_infected.png)
-
-Difference between average and variability images shows that affected leaves present more white stipes on the center.
-
-![average variability between samples](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector/blob/main/readme_images/average_image.png)
-
-While image difference between average infected and average infected leaves shows no intuitive difference. 
-
-![average variability between samples](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector/blob/main/readme_images/avg_diff.png)
-
-**3. Conclusion**
-
-The model was able to detect such differences and learn how to differentiate and generalize in order to make accurate predictions.
-A good model trains its ability to predict classes on a batch of data without adhering too closely to that set of data.
-In this way the model is able to generalize and predict future observation reliably because it didn't 'memorize' the relationships between features and labels as seen in the training dataset but the general pattern from feature to labels.
+ The hypothesis is that infected leaves show dinstinct characteristics, which give space for a consistent differentiation. Specifically, coloration patterns and textures in the images are a very suitable candidate for Convolutional Neural Network (CNN) model investigation.
