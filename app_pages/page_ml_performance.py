@@ -20,6 +20,7 @@ def page_ml_performance_body():
     st.image(labels_distribution, caption='Labels Distribution on Train, Validation and Test Sets')
     st.write("---")
 
+    st.header("Model History")
 
     st.subheader("Model Training Losses")
     st.image(f"outputs/{version}/model_training_losses.png", caption='Training and Validation Loss')
