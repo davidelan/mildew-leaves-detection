@@ -31,6 +31,12 @@ def page_ml_performance_body():
     st.write("### Generalised Performance on Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))
 
+    st.write("---")
+
+    st.write(
+        f"For additional information, please visit and **read** the "
+        f"[Project README file](https://github.com/davidelan/mildew-leaves-detection/blob/main/README.md).")
+
     
     
     

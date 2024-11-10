@@ -20,10 +20,13 @@ def page_leaf_visualizer_body():
         f"Below you have the opportunity to explore differen kind of visualizations and "
         f"get a better understanding between healthy and unhealthy cherry leaves.")
 
+    st.write("---")
+
     st.write(
         f"For additional information, please visit and **read** the "
         f"[Project README file](https://github.com/davidelan/mildew-leaves-detection/blob/main/README.md).")
-    
+
+    st.write("---")
 
     version = 'v1'
 

@@ -43,6 +43,8 @@ f"more sustainable agricultural future. \n\n"
         f"3 - Download a prediction report of an examination of cherry leaves."
         )
 
+    st.write("---")
+
     st.write(
         f"For additional information, please visit and **read** the "
         f"[Project README file](https://github.com/davidelan/mildew-leaves-detection/blob/main/README.md).")

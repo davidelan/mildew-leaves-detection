@@ -41,6 +41,8 @@ def page_project_hypothesis_body():
     disease and offering substantial potential for cost savings.
     """)
 
+    st.write("---")
+
     st.write(
         f"For additional information, please visit and **read** the "
         f"[Project README file](https://github.com/davidelan/mildew-leaves-detection/blob/main/README.md).")
