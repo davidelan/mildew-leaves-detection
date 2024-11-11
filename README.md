@@ -16,7 +16,7 @@
 12. [Technologies used](#technologies-used)
 13. [Credits](#credits)
 
-### Deployed version at [cherry-powdery-mildew-detector.herokuapp.com](https:)
+### Deployed version at [cherry-powdery-mildew-detector.herokuapp.com](https://mildew-leaves-detection-dav-9ff1fd9edf31.herokuapp.com/)
 
 ## Dataset Content
 
@@ -41,7 +41,7 @@ Summarizing:
 **Hypothesis**: Infected cherry leaves exhibit distinct markings that set them apart from healthy ones.
    - __How to validate__: Create an average image study that can help to investigate the disease and its implications.<br/>
 
-### Hypothesis 1
+### Hypothesis
 > Infected cherry leaves exhibit distinct markings that set them apart from healthy ones.
 
 **1. Introduction**
@@ -66,3 +66,32 @@ Identifying powdery mildew early is essential to stopping its spread across a la
 ### Financial Impact
 
 Integrating this machine learning solution into agricultural practices offers businesses the chance to enhance their crop management strategies. The ability to quickly and accurately detect infected leaves allows for quicker action, lowering the risk of widespread disease and offering substantial potential for cost savings.
+
+------------------------------------
+--------- fino a qui ---------------
+
+**2. Observation**
+
+In the following emages you can appreciate the difference between cherry leaves that are healthy and cherry leaves that are affected by mildew desease:
+
+![montage_healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/montage_healthy.png)
+![montage_infected](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/montage_mildew.png)
+
+
+Here we can have a look and appreciate the slightly difference in the two leaves categories with respect to their average and variability: 
+
+![average variability healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_healthy.png)
+![average variability mildew](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_powdery_mildew.png)
+
+While image difference between average infected and average infected leaves shows no intuitive difference. 
+
+It seems very difficult if not impossible to intuitively distinguish between images of healthy and infected leaves:
+
+![average variability](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_diff.png)
+
+**3. Conclusion**
+
+The model successfully identified these differences and learned to distinguish and generalize, enabling it to make precise predictions. A well-trained model develops its capacity to predict classes based on a data batch without overly relying on the specifics of that batch. By doing so, it can generalize effectively and make dependable predictions for future data, as it focuses on the overall patterns connecting features and labels, rather than simply memorizing the relationships within the training set.
+
+---
+
