@@ -83,7 +83,6 @@ Here we can have a look and appreciate the slightly difference in the two leaves
 ![average variability healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_healthy.png)
 ![average variability mildew](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_powdery_mildew.png)
 
-While image difference between average infected and average infected leaves shows no intuitive difference. 
 
 It seems very difficult if not impossible to intuitively distinguish between images of healthy and infected leaves:
 
