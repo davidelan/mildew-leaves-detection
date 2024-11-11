@@ -15,7 +15,7 @@ def page_leaf_visualizer_body():
         f"The purpose of this study is to help distinguish between "
         f"a healthy cherry leaf and one affected by mildew.\n\n"
 
-        f"This page provides a visual representation of the cherry leaf dataset."
+        f"This page provides a visual representation of the cherry leaf dataset. "
         
         f"Below you have the opportunity to explore differen kind of visualizations and "
         f"get a better understanding between healthy and unhealthy cherry leaves.")
