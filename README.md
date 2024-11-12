@@ -194,3 +194,21 @@ This section gives an overview of the goal, dataset, phases and future improveme
 ![montage-healthy](/images/montage_healthy.png)
 ![montage-infected](/images/montage_infected.png)
 ---
+
+
+### Powdery mildew Detector
+
+- In this part of the dashboard th euser can upload one or more cherry leaves images that can go through a live prediction.
+
+![detector-upload](/images/prediction_1.png)
+---
+
+- The detector shows the image or images uploaded and formulates a prediction.
+
+![detector-prediction](/images/prediction_2.png)
+---
+
+
+- The results of the prediction with the option to download the report is offered.
+
+![detector-results](/images/prediction_3.png)
