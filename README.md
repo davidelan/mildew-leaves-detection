@@ -237,3 +237,52 @@ Visually user-friendly illustration of how the dataset was divided for the analy
 
 ![sample-cherry-image-processed](/images/performance_test_set.png)
 ---
+
+
+
+## Manual Testing
+
+### Streamlit App
+The Streamlit app was manually tested with the use of User Stories
+
+#### Navigation
+
+| Feature                           | Action        | Expected Result | Success |
+| --------------------------------- | ------------- | --------------- | ------- |
+| Project Summary                   | Click on link | Taken to page   | Yes     |
+| Leaves Visualizer          | Click on link | Taken to page   | Yes     |
+| Mildew Predictor          | Click on link | Taken to page   | Yes     |
+| Project Hypothesis                | Click on link | Taken to page   | Yes     |
+| Machine Learning Performance            | Click on link | Taken to page   | Yes     |
+
+| Feature                     | Action                           | Expected Result                                                       | Success |
+| --------------------------- | -------------------------------- | --------------------------------------------------------------------- | ------- |
+| Cherry Leaves Visualizer    |                                  |                                                                       |         |
+| Description of the page     | View Leaf Visualizer page        | Get descripting of the page aims                                      | Yes     |
+| Samples Cherry Leaf Image   | Select the checkbox              | Open two sample images of healthy and mildew leaf                     | Yes     |
+| Average and variability     | Select the checkbox              | Image with a note of difference between average and variability       | Yes     |
+| Healthy and Powdery Mildew  | Select the checkbox              | Image with note of shows Differences between Healthy and Mildew       | Yes     |
+| Image Montage               | Select the checkbox              | labels to select from Healthy or Mildew                               | Yes     |
+| Create Montage              | Select the label                 | Montage of the images from the selected label                         | Yes     |
+
+
+
+| Feature                                | Action                           | Expected Result                                                       | Success |
+| -------------------------------------- | -------------------------------- | --------------------------------------------------------------------- | ------- |
+| Leaf Mildew Detection page             |                                  |                                                                       |         |
+| Page Objective                         | Leaf Mildew Detection page       |                                                                       | Yes     |
+| Upload an Image                        | Click, or drag and drop          | Image Succesfuly upload                                               | Yes     |
+| Make prediction                        | Click Make prediction            | See result and read the report                                        | Yes     |
+| Download Report                        | Click Download Report            | Report download as a csv file                                         | Yes     |
+
+
+| Feature                                | Action                           | Expected Result                                                       | Success |
+| -------------------------------------- | -------------------------------- | --------------------------------------------------------------------- | ------- |
+| Project Hypothesis page                |                                  |                                                                       |         |
+| Read about the Project Hypothesis      | View Hypothesis Page             |  Project Hypothesis                                                   | Yes     |
+
+
+| Feature                                | Action                           | Expected Result                                                       | Success |
+| -------------------------------------- | -------------------------------- | --------------------------------------------------------------------- | ------- |
+| ML Performance page                    |                                  |                                                                       |         |
+| Technical details and performance metrics | View ML Performance Page      | Different visualizations of training history and evaluation metrics 
