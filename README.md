@@ -5,9 +5,9 @@
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
 3. [Hypothesis and validation](#hypothesis-and-validation)
-4. [Rationale for the model](#the-rationale-for-the-model)
+4. [Logic for the model](#logic-for-the-model)
 5. [Trial and error](#trial-and-error)
-6. [Implementation of the Business Requirements](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+6. [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-machine-learning-tasks)
 7. [Machine Learning Business case](#machine-learning-business-case)
 8. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
 9. [CRISP DM Process](#the-process-of-cross-industry-standard-process-for-data-mining)
@@ -67,8 +67,6 @@ Identifying powdery mildew early is essential to stopping its spread across a la
 
 Integrating this machine learning solution into agricultural practices offers businesses the chance to enhance their crop management strategies. The ability to quickly and accurately detect infected leaves allows for quicker action, lowering the risk of widespread disease and offering substantial potential for cost savings.
 
-------------------------------------
---------- fino a qui ---------------
 
 **2. Observation**
 
@@ -92,5 +90,74 @@ It seems very difficult if not impossible to intuitively distinguish between ima
 
 The model successfully identified these differences and learned to distinguish and generalize, enabling it to make precise predictions. A well-trained model develops its capacity to predict classes based on a data batch without overly relying on the specifics of that batch. By doing so, it can generalize effectively and make dependable predictions for future data, as it focuses on the overall patterns connecting features and labels, rather than simply memorizing the relationships within the training set.
 
+
 ---
 
+
+## Logic for the model
+
+ The model selected may not be the optimal one, but it was ultimately chosen after assessing the results of various tests and adjusting the model to meet the specific objective.
+
+A strong model should minimize the computational resources it requires by simplifying the neural network architecture and reducing the number of trainable parameters, all while maintaining its ability to generalize, preserve accuracy, and reduce error.
+
+An effective model enhances its ability to predict classes based on a dataset without overly fitting to that particular set. This allows the model to generalize, making it capable of reliably predicting future data since it doesn't simply memorize the relationships between features and labels in the training data, but instead learns the broader patterns that link features to labels.
+
+The model is composed by 1 input layer, 3 hidden layers and 1 output layer.
+
+
+## Mapping Business Requirements to Data Visualizations and Machine Learning Tasks
+
+### Mapping First Business Requirement: Data Visualization
+>The client needs a study which could allow a differentiation between healthy cherry leaves and cherry leaves affected by powdery mildew.
+
+- As a user, I want to display the mean and standard deviation of images of healthy cherry leaves and of cherry leaves that contain powdery mildew so that I can optically distinguish between them.
+- As a user, I want to display the difference between an average infected cherry leaf image and an average healthy cherry leaf image.
+- As a user, I want to display an image montage for images of cherry leaves that are healthy and also of cherry leaves that contain powdery mildew.
+
+
+### Mapping Second Business Requirement: Classification
+>The client has the need to be able to fiugre out if a provided image of a cherry leaf is healthy or infected and see a report.
+
+- As a user, I want to predict if a cherry leaf is healthy or contains powdery mildew.
+- As a user, I want to upload cherry leaves images into the machine learning predicting program.
+- As a user, I want to download the analysis report of each prediction.
+
+
+
+### ### Mapping Third Business Requirement: Report
+>The client is interested in obtaining a prediction report of the examined leaves. 
+
+- As a client I want to obtain a report from the ML predictions on new leaves.  
+
+
+
+## Machine Learning Business Case
+
+### Current Status
+
+Farmy and Foods currently depends on expensive trained staff to manually inspect cherry leaves and who can reliably identify healthy versus those infected with mildew. This process is not only time-consuming and labor-intensive but also susceptible to human error.
+
+### Project Goal
+
+The objective of this project is to create a ML model capable of accurately and efficiently categorizing cherry leaves as either "healthy" or "mildew-infected." Automating this task will help the business conserve valuable time, reduce labor, and optimize resources.
+
+### Model Overview
+
+This machine learning model is a supervised binary classification system that is trained using images of both healthy and mildew-infected cherry leaves. It learns to distinguish between the two categories by recognizing patterns in the images. The model then uses this knowledge to make a prediction, classifying the leaves as either "healthy" or "mildew."
+
+### User Requirements
+
+The customer needs an intuitive dashboard that allows them to easily upload both existing and new images of cherry leaves for analysis.
+
+### Future Scope
+
+Although the current emphasis is on cherry leaves, the model has the potential to be adapted for detecting diseases in other types of crops as well.
+
+## Agile Process
+
+
+This project was planned and executed using the Agile methodology. The work was divided into smaller, manageable user stories to facilitate a smooth and iterative development process. From the initial planning through to the final deployment, a structured yet flexible approach was adopted, allowing for adjustments at every stage.
+
+To track progress and visualize the workflow, a [GitHub project](https://github.com/users/davidelan/projects/4/views/1?layout=board) was set up using the Kanban board technique. This method ensured efficient task management, with each project component being clearly outlined, prioritized, and completed in an orderly fashion.
+
+![Kanban Board](/images/agile_board.png) 
