@@ -26,7 +26,7 @@ def page_mildew_detector_body():
     st.write(
         f"**Please upload a cherry leave picture**"
         )
-    images_buffer = st.file_uploader(' ', type='jpeg',accept_multiple_files=True)
+    images_buffer = st.file_uploader(' ', type='JPG',accept_multiple_files=True)
    
     if images_buffer is not None:
         df_report = pd.DataFrame([])
