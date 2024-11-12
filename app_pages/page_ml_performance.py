@@ -37,7 +37,3 @@ def page_ml_performance_body():
     st.write(
         f"For additional information, please visit and **read** the "
         f"[Project README file](https://github.com/davidelan/mildew-leaves-detection/blob/main/README.md).")
-
-    
-    
-    

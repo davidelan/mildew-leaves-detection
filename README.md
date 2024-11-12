@@ -285,4 +285,74 @@ The Streamlit app was manually tested with the use of User Stories
 | Feature                                | Action                           | Expected Result                                                       | Success |
 | -------------------------------------- | -------------------------------- | --------------------------------------------------------------------- | ------- |
 | ML Performance page                    |                                  |                                                                       |         |
-| Technical details and performance metrics | View ML Performance Page      | Different visualizations of training history and evaluation metrics 
+| Technical details and performance metrics | View ML Performance Page      | Different visualizations of training history and evaluation metrics                                                 | Yes     |
+
+
+### Automated Unit Tests
+- There were no automated unit testing. It is planned for the future development.
+
+[Back to top ⇧](#table-of-contents)
+
+
+
+## Bugs
+
+No known bugs to report.
+
+
+## Deployment
+The project is coded and hosted on GitHub and deployed with [Heroku](https://www.heroku.com/). 
+
+### Creating the Heroku app 
+The steps needed to deploy this projects are as follows:
+
+1. Create a `requirement.txt` file in GitHub, for Heroku to read, listing the dependencies the program needs in order to run.
+2. Set the `runtime.txt` Python version to a Heroku-20 stack currently supported version.
+3. `push` the recent changes to GitHub and go to your [Heroku account page](https://id.heroku.com/login) to create and deploy the app running the project. 
+3. Chose "CREATE NEW APP", give it a unique name, and select a geographical region. 
+4. Add  `heroku/python` buildpack from the _Settings_ tab.
+5. From the _Deploy_ tab, chose GitHub as deployment method, connect to GitHub and select the project's repository. 
+6. Select the branch you want to deploy, then click Deploy Branch.
+7. Click to "Enable Automatic Deploys " or chose to "Deploy Branch" from the _Manual Deploy_ section. 
+8. Wait for the logs to run while the dependencies are installed and the app is being built.
+9. The mock terminal is then ready and accessible from a link similar to `https://your-projects-name.herokuapp.com/`
+10. If the slug size is too large then add large files not required for the app to the `.slugignore` file.
+   
+### Forking the Repository
+
+- By forking this GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository. The steps to fork the repository are as follows:
+    - Locate the [GitHub Repository](https://github.com/davidelan/mildew-leaves-detection) of this project and log into your GitHub account. 
+    - Click on the "Fork" button, on the top right of the page, just above the "Settings". 
+    - Decide where to fork the repository (your account for instance)
+    - You now have a copy of the original repository in your GitHub account.
+
+
+
+__You can find the live link to the site here: [Mildew leaves detection](https://mildew-leaves-detection-dav-9ff1fd9edf31.herokuapp.com/)__
+
+## Technologies used
+
+### Platforms
+- [Heroku](https://en.wikipedia.org/wiki/Heroku) To deploy this project
+- [Jupiter Notebook](https://jupyter.org/) to edit code for this project
+- [Kaggle](https://www.kaggle.com/) to download datasets for this project
+- [GitHub](https://github.com/): To store the project code after being pushed from Gitpod.
+- [Gitpod](https://www.gitpod.io/) Gitpod Dashboard was used to write the code and its terminal to 'commit' to GitHub and 'push' to GitHub Pages.
+
+### Languages
+- [Python](https://www.python.org/)
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+  
+### Main Data Analysis and Machine Learning Libraries
+<pre>
+- tensorflow-cpu 2.6.0  used for creating the model
+- numpy 1.19.2          used for converting to array 
+- scikit-learn 0.24.2   used for evaluating the model
+- streamlit 0.85.0      used for creating the dashboard
+- pandas 1.1.2          used for creating/saving as dataframe
+- matplotlib 3.3.1      used for plotting the sets' distribution
+- keras 2.6.0           used for setting model's hyperparamters
+- plotly 5.12.0         used for plotting the model's learning curve 
+- seaborn 0.11.0        used for plotting the model's confusion matrix
+- streamlit             used for creating and sharing this project's interface
+</pre>
