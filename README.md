@@ -180,11 +180,13 @@ This section gives an overview of the goal, dataset, phases and future improveme
 - A user can also identify the average images of healthy and infected cherry leaves and consider the differences between them.
 
 - This part of the dashboard visually shows the two different categories of healthy and infected cherry leaves.
-- It is also possible for the user to visualize average and variability images of the two leaves' groups 
-- The user can also choose to request an image montage of either healthy or infected leaves' images.
-
 ![sample-images](/images/sample_leaves.png)
+
+- It is also possible for the user to visualize average and variability images of the two leaves' groups 
 ![difference-avr-variability](/images/difference-avr.png)
 ![difference-avr-variabilty-both](/images/difference-avr-both.png)
+
+
+- The user can also choose to request an image montage of either healthy or infected leaves' images.
 ![montage-healthy](/images/montage_healthy.png)
 ![montage-infected](/images/montage_infected.png)
