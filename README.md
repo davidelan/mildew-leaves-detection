@@ -223,14 +223,14 @@ In this section of the dashboard various information about the project hypothesi
 ### Machine Learning Performance
 Visually user-friendly illustration of how the dataset was divided for the analysis, model training losses and accuracy and a generalised performance on test set.
 
-- ML Performance
+- Data Distribution
 
-![data-ditribution](/images/ml-performance.png)
+![data-ditribution](/images/ml_performance.png)
 ---
 
 - Model History
 
-![training-history](/images/ml-history.png)
+![training-history](/images/ml_history.png)
 ---
 
 - Generalised Performance on Test Set
