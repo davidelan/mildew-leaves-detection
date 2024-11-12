@@ -72,19 +72,19 @@ Integrating this machine learning solution into agricultural practices offers bu
 
 In the following images you can appreciate the difference between cherry leaves that are healthy and cherry leaves that are affected by mildew desease:
 
-![images_healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/images_healthy.png)
-![images_infected](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/images_mildew.png)
+![images-healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/images_healthy.png)
+![images-infected](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/images_mildew.png)
 
 
 Here we can have a look and appreciate the slightly difference in the two leaves categories with respect to their average and variability: 
 
-![average variability healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_healthy.png)
-![average variability mildew](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_powdery_mildew.png)
+![average-variability-healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_healthy.png)
+![average-variability-mildew](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_var_powdery_mildew.png)
 
 
 It seems very difficult if not impossible to intuitively distinguish between images of healthy and infected leaves:
 
-![average variability](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_diff.png)
+![average-variability](https://github.com/davidelan/mildew-leaves-detection/blob/main/outputs/v1/avg_diff.png)
 
 **3. Conclusion**
 
@@ -212,3 +212,28 @@ This section gives an overview of the goal, dataset, phases and future improveme
 - The results of the prediction with the option to download the report is offered.
 
 ![detector-results](/images/prediction_3.png)
+
+
+### Project Hypothesis
+In this section of the dashboard various information about the project hypothesis and validation methods are displayed.
+![hypothesis-page](/images/hypothesis.png)
+
+
+
+### Machine Learning Performance
+Visually user-friendly illustration of how the dataset was divided for the analysis, model training losses and accuracy and a generalised performance on test set.
+
+- ML Performance
+
+![data-ditribution](/images/ml-performance.png)
+---
+
+- Model History
+
+![training-history](/images/ml-history.png)
+---
+
+- Generalised Performance on Test Set
+
+![sample-cherry-image-processed](/images/performance_test_set.png)
+---
