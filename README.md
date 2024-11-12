@@ -70,10 +70,10 @@ Integrating this machine learning solution into agricultural practices offers bu
 
 **2. Observation**
 
-In the following emages you can appreciate the difference between cherry leaves that are healthy and cherry leaves that are affected by mildew desease:
+In the following images you can appreciate the difference between cherry leaves that are healthy and cherry leaves that are affected by mildew desease:
 
-![montage_healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/montage_healthy.png)
-![montage_infected](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/montage_mildew.png)
+![images_healthy](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/images_healthy.png)
+![images_infected](https://github.com/davidelan/mildew-leaves-detection/blob/main/images/images_mildew.png)
 
 
 Here we can have a look and appreciate the slightly difference in the two leaves categories with respect to their average and variability: 
@@ -158,6 +158,33 @@ Although the current emphasis is on cherry leaves, the model has the potential t
 
 This project was planned and executed using the Agile methodology. The work was divided into smaller, manageable user stories to facilitate a smooth and iterative development process. From the initial planning through to the final deployment, a structured yet flexible approach was adopted, allowing for adjustments at every stage.
 
-To track progress and visualize the workflow, a [GitHub project](https://github.com/users/davidelan/projects/4/views/1?layout=board) was set up using the Kanban board technique. This method ensured efficient task management, with each project component being clearly outlined, prioritized, and completed in an orderly fashion.
+To track progress and visualize the workflow, a [GitHub project board](https://github.com/users/davidelan/projects/4/views/1?layout=board) was set up using the Kanban board technique in Github. This method ensured efficient task management, with each project component being clearly outlined, prioritized, and completed in an orderly fashion.
 
-![Kanban Board](/images/agile_board.png) 
+![Kanban Board on Github](/images/agile_board.png)  
+
+
+
+## Dashboard Design (Streamlit App User Interface)
+
+The dashboard is a visual application created with Streamlit, which allows the user to navigate through the following pages:
+
+### Project Summary Page
+
+This section gives an overview of the goal, dataset, phases and future improvements of the project.
+
+![summary-page](/images/project_summary.png)
+
+
+### Leaves Visualizer
+- Show findings related to visually differentiating healthy and mildew-infected leaves.
+- A user can also identify the average images of healthy and infected cherry leaves and consider the differences between them.
+
+- This part of the dashboard visually shows the two different categories of healthy and infected cherry leaves.
+- It is also possible for the user to visualize average and variability images of the two leaves' groups 
+- The user can also choose to request an image montage of either healthy or infected leaves' images.
+
+![sample-images](/images/sample_leaves.png)
+![difference-avr-variability](/images/difference-avr.png)
+![difference-avr-variabilty-both](/images/difference-avr-both.png)
+![montage-healthy](/images/montage_healthy.png)
+![montage-infected](/images/montage_infected.png)
