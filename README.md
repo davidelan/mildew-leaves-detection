@@ -9,12 +9,13 @@
 5. [Trial and error](#trial-and-error)
 6. [Mapping Business Requirements to Data Visualizations and ML Tasks](#mapping-business-requirements-to-data-visualizations-and-machine-learning-tasks)
 7. [Machine Learning Business case](#machine-learning-business-case)
-8. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
-9. [CRISP DM Process](#the-process-of-cross-industry-standard-process-for-data-mining)
-10. [Bugs](#bugs)
-11. [Deployment](#deployment)
-12. [Technologies used](#technologies-used)
-13. [Credits](#credits)
+8. [Dashboard design](#dashboard-design)
+9. [CRISP-DM Process](#crisp-dm-process)
+10. [Manual Testing](manual-testing)
+11. [Bugs](#bugs)
+12. [Deployment](#deployment)
+13. [Technologies used](#technologies-used)
+14. [Credits](#credits)
 
 ### Deployed version at [cherry-powdery-mildew-detector.herokuapp.com](https://mildew-leaves-detection-dav-9ff1fd9edf31.herokuapp.com/)
 
@@ -153,8 +154,7 @@ The customer needs an intuitive dashboard that allows them to easily upload both
 
 Although the current emphasis is on cherry leaves, the model has the potential to be adapted for detecting diseases in other types of crops as well.
 
-## Agile Process
-
+### Agile Process
 
 This project was planned and executed using the Agile methodology. The work was divided into smaller, manageable user stories to facilitate a smooth and iterative development process. From the initial planning through to the final deployment, a structured yet flexible approach was adopted, allowing for adjustments at every stage.
 
@@ -164,7 +164,8 @@ To track progress and visualize the workflow, a [GitHub project board](https://g
 
 
 
-## Dashboard Design (Streamlit App User Interface)
+## Dashboard Design 
+>Streamlit App User Interface
 
 The dashboard is a visual application created with Streamlit, which allows the user to navigate through the following pages:
 
@@ -238,6 +239,30 @@ Visually user-friendly illustration of how the dataset was divided for the analy
 ![sample-cherry-image-processed](/images/performance_test_set.png)
 ---
 
+
+## CRISP-DM process
+CRISP-DM, or Cross-Industry Standard Process for Data Mining, is a widely recognized framework designed to direct data mining projects.
+
+- As a methodology, it outlines the common stages of a project, the tasks associated with each stage, and the connections between those tasks.
+- As a process model, CRISP-DM offers a comprehensive view of the data mining life cycle.
+
+### Business Understanding
+The goal is to create a machine learning model that distinguishes between healthy and mildew-infected cherry leaves based on images. The model will offer real-time predictions via a dashboard, aiming for at least 97% accuracy to improve efficiency in manual inspections.
+
+### Data Understanding
+Collect images of healthy and infected cherry leaves, understanding the resolution, class distribution, and key features that differentiate them. Analyze the data for patterns and anomalies.
+
+### Data Preparation
+Label all images, remove non-image files, and standardize image sizes. Normalize pixel values and apply data augmentation to improve dataset diversity and model generalization.
+
+### Modeling
+Select a machine learning model, like a Convolutional Neural Network (CNN), for image classification. Train the model using the prepared data, experimenting with different architectures and hyperparameters for optimal performance.
+
+### Evaluation
+Assess the model's performance using accuracy, precision, recall, and F1-score. Ensure good performance across all classes, and cross-validate to prevent overfitting.
+
+### Deployment
+Deploy the model in a web app (e.g., using Streamlit) where users can upload images and get predictions. Monitor the model’s performance continuously and adjust as needed.
 
 
 ## Manual Testing
@@ -330,6 +355,7 @@ The steps needed to deploy this projects are as follows:
 
 __You can find the live link to the site here: [Mildew leaves detection](https://mildew-leaves-detection-dav-9ff1fd9edf31.herokuapp.com/)__
 
+
 ## Technologies used
 
 ### Platforms
@@ -356,3 +382,35 @@ __You can find the live link to the site here: [Mildew leaves detection](https:/
 - seaborn 0.11.0        used for plotting the model's confusion matrix
 - streamlit             used for creating and sharing this project's interface
 </pre>
+
+
+## Credits
+
+### Images
+
+- The banner image was taken from pexel.com: Photo by berffilm: [pexels.com](https://www.pexels.com/photo/hand-reaching-for-cherries-on-tree-19089353/)
+
+
+### Code & README
+
+- ***My mildew-leaves-detection project is based on the CI's Malaria Detection walkthrough project.***
+
+- I also used the repositories of Claudia Cifaldi and AlbinHall as a reference for the coding, for the README file and for the sturcture of the project:
+- [*Claudia Cifaldi*](https://github.com/cla-cif/Cherry-Powdery-Mildew-Detector/)
+- [*AlbinHall*](https://github.com/AlbinHall/mildew-detection/)
+
+Thank you guys!!!
+
+
+### Acknowledgments
+
+- I would like to say a big thank you to my mentor Mo Shami who always pointed me to the right direction, for his availability and for giving me motivation throuhout the whole project. 
+
+
+- A big thanks again to all the other students in the Slack community who have helped me and inspired me many times.
+
+- Thanks a lot to Kay Welfare for her incredible support that I get every week. 
+
+
+
+### Deployed version at [cherry-powdery-mildew-detector.herokuapp.com](https://mildew-leaves-detection-dav-9ff1fd9edf31.herokuapp.com/)
