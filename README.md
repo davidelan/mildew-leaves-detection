@@ -10,7 +10,7 @@
 6. [Machine Learning Business case](#machine-learning-business-case)
 7. [Dashboard design](#dashboard-design)
 8. [CRISP-DM Process](#crisp-dm-process)
-9. [Manual Testing](manual-testing)
+9. [Manual Testing](#manual-testing)
 10. [Bugs](#bugs)
 11. [Deployment](#deployment)
 12. [Technologies used](#technologies-used)
@@ -262,6 +262,8 @@ Assess the model's performance using accuracy, precision, recall, and F1-score. 
 
 ### Deployment
 Deploy the model in a web app (e.g., using Streamlit) where users can upload images and get predictions. Monitor the model’s performance continuously and adjust as needed.
+
+
 
 
 ## Manual Testing
