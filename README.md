@@ -317,9 +317,6 @@ The Streamlit app was manually tested with the use of User Stories
 ### Automated Unit Tests
 - There were no automated unit testing. It is planned for the future development.
 
-[Back to top ⇧](#table-of-contents)
-
-
 
 ## Bugs
 
@@ -412,6 +409,6 @@ Thank you guys!!!
 
 - Thanks a lot to Kay Welfare for her incredible support that I get every week. 
 
-
-
 ### Deployed version at [cherry-powdery-mildew-detector.herokuapp.com](https://mildew-leaves-detection-dav-9ff1fd9edf31.herokuapp.com/)
+
+[Back to top ⇧](#table-of-contents)
